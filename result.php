@@ -1,6 +1,6 @@
 <?php
     $playername = $_GET["playername"];
-    $key = "b3d57af4-84c7-4fa9-99f9-259c4358e257";
+    $key = "APIKEYHERE";
     $json = file_get_contents('https://api.hypixel.net/player?key='.$key.'&name='.$playername);
     $player = json_decode($json, true);
     $playeruuid = $player['player']['uuid'];
